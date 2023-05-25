@@ -1,0 +1,126 @@
+#I know this code isn't DRY Eric pls don't judge me i did this at midnight
+live_loop :dru do
+  12.times do
+    sample :drum_heavy_kick, amp: 50
+    sleep 1
+  end
+  stop
+end
+sleep 4
+live_loop :tru do
+  8.times do
+    sample :bass_hit_c, amp: 50
+    sleep 1
+  end
+  stop
+end
+sleep 4
+live_loop :cru do
+  6.times do
+    sample :perc_snap, amp: 50
+    sleep 0.5
+  end
+  stop
+end
+sleep 4
+sample :vinyl_rewind
+sleep 2
+use_synth :dpulse
+play :a5
+sleep 1
+play :gs5
+sleep 1
+play :a5
+sleep 0.5
+play :as5
+sleep 1
+play :a5
+sleep 1
+play :as5
+sleep 1
+play :b5
+sleep 1
+play :as5
+sleep 0.5
+play :b5
+sleep 1
+play :g6
+sleep 1
+play :fs6
+sleep 0.5
+play :g6
+sleep 0.5
+play :fs6
+sleep 1
+play :e6
+sleep 0.5
+play :e6
+sleep 1
+play :d6
+sleep 0.5
+play :d6
+sleep 1
+play :cs6
+sleep 0.5
+play :cs6
+sleep 1
+play :d6
+sleep 1
+play :e6
+sleep 1
+live_loop :dru do
+  18.times do
+    sample :drum_heavy_kick, amp: 50
+    sleep 1
+  end
+  stop
+end
+live_loop :tru do
+  18.times do
+    sample :bass_hit_c
+    sleep 1
+  end
+  stop
+end
+play :a5
+sleep 1
+play :gs5
+sleep 1
+play :a5
+sleep 0.5
+play :as5
+sleep 1
+play :a5
+sleep 1
+play :as5
+sleep 1
+play :b5
+sleep 1
+play :as5
+sleep 0.5
+play :b5
+sleep 1
+play :g6
+sleep 1
+play :fs6
+sleep 0.5
+play :g6
+sleep 0.5
+play :fs6
+sleep 1
+play :e6
+sleep 0.5
+play :e6
+sleep 1
+play :d6
+sleep 0.5
+play :d6
+sleep 1
+play :cs6
+sleep 0.5
+play :cs6
+sleep 1
+play :d6
+sleep 1
+play :e6
+sleep 1
